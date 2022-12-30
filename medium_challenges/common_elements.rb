@@ -5,7 +5,7 @@
 # input arrays.
 
 def common_elements(arr1, arr2)
-  arr1 & arr2
+    p arr1.select { |elem| arr2.include?(elem) }
 end
 
 # common_elements([-1, 3, 4, 6, 7, 9], [1, 3])
